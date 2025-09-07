@@ -22,8 +22,8 @@
     }
   ],
   "env": {
-    "VITE_API_BASE_URL": "@vite_api_base_url",
-    "VITE_WEBSOCKET_URL": "@vite_websocket_url",
+    "VITE_API_BASE_URL": "https://fylaro-backend.vercel.app",
+    "VITE_WEBSOCKET_URL": "wss://fylaro-backend.vercel.app",
     "VITE_CHAIN_ID": "421614",
     "VITE_NETWORK_NAME": "arbitrum-sepolia",
     "VITE_INVOICE_TOKEN_ADDRESS": "0x1FA52B372eC9675337D0c8ddF97CCEcC2c8Ba2B3",
