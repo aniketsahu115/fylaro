@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { 
-  LayoutDashboard, 
-  ShoppingCart, 
-  Briefcase, 
+import {
+  LayoutDashboard,
+  ShoppingCart,
+  Briefcase,
   TrendingUp,
   FileText,
   CreditCard,
@@ -11,11 +11,12 @@ import {
   HelpCircle,
   BarChart3,
   Users,
-  Upload
+  Upload,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import fylaroLogo from "@/assets/fylaro-logo-icon.png";
 
 interface SidebarProps {
   className?: string;
@@ -64,18 +65,29 @@ const Sidebar = ({ className }: SidebarProps) => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <div className={cn("flex flex-col h-full bg-card border-r border-border", className)}>
+    <div
+      className={cn(
+        "flex flex-col h-full bg-card border-r border-border",
+        className
+      )}
+    >
       {/* Header */}
       <div className="p-6 border-b border-border">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="h-8 w-8 rounded-lg overflow-hidden">
-              <img src="/src/assets/fylaro-logo-icon.png" alt="Fylaro Logo" className="w-full h-full object-cover" />
+              <img
+                src={fylaroLogo}
+                alt="Fylaro Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             {!collapsed && (
               <div>
                 <h2 className="text-lg font-semibold">Fylaro</h2>
-                <p className="text-xs text-muted-foreground">Invoice Financing</p>
+                <p className="text-xs text-muted-foreground">
+                  Invoice Financing
+                </p>
               </div>
             )}
           </div>
@@ -92,8 +104,8 @@ const Sidebar = ({ className }: SidebarProps) => {
               className={({ isActive }) =>
                 cn(
                   "w-full justify-start flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all",
-                  isActive 
-                    ? "bg-primary text-primary-foreground glow" 
+                  isActive
+                    ? "bg-primary text-primary-foreground glow"
                     : "text-muted-foreground hover:text-foreground hover:bg-secondary"
                 )
               }
@@ -117,13 +129,13 @@ const Sidebar = ({ className }: SidebarProps) => {
       {/* Footer */}
       <div className="p-4 border-t border-border">
         <div className="space-y-2">
-          <NavLink 
+          <NavLink
             to="/settings"
             className={({ isActive }) =>
               cn(
                 "w-full justify-start flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all",
-                isActive 
-                  ? "bg-primary text-primary-foreground" 
+                isActive
+                  ? "bg-primary text-primary-foreground"
                   : "text-muted-foreground hover:text-foreground hover:bg-secondary"
               )
             }
@@ -131,13 +143,13 @@ const Sidebar = ({ className }: SidebarProps) => {
             <Settings className="h-5 w-5 mr-3" />
             {!collapsed && "Settings"}
           </NavLink>
-          <NavLink 
+          <NavLink
             to="/help"
             className={({ isActive }) =>
               cn(
                 "w-full justify-start flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all",
-                isActive 
-                  ? "bg-primary text-primary-foreground" 
+                isActive
+                  ? "bg-primary text-primary-foreground"
                   : "text-muted-foreground hover:text-foreground hover:bg-secondary"
               )
             }

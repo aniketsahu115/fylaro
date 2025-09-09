@@ -23,6 +23,7 @@ import { useWallet } from "@/hooks/useWallet";
 import { useLanguage } from "@/contexts/LanguageContext";
 import arbitrumIcon from "/logos/logo-symbol.svg";
 import arbitrumSepoliaIcon from "/logos/logo-symbol.svg";
+import fylaroLogo from "@/assets/fylaro-logo-icon.png";
 import { WalletConnectModal } from "@/components/features/WalletConnectModal";
 import SearchModal from "@/components/features/SearchModal";
 import LanguageSelector from "@/components/features/LanguageSelector";
@@ -68,7 +69,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="w-10 h-10 rounded-lg overflow-hidden group-hover:scale-110 transition-smooth">
               <img
-                src="../src/assets/fylaro-logo-icon.png"
+                src={fylaroLogo}
                 alt="Fylaro Logo"
                 className="w-full h-full object-cover"
               />
