@@ -6,7 +6,7 @@ A next-generation invoice financing platform frontend built with React, TypeScri
 
 Visit: [https://your-deployment-url.vercel.app](https://your-deployment-url.vercel.app)
 
-## 📋 Features
+## Features
 
 - **Invoice Tokenization**: Convert invoices into ERC-1155 tokens
 - **Investment Platform**: Fractional investment in tokenized invoices
