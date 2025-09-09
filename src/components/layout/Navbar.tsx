@@ -68,7 +68,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="w-10 h-10 rounded-lg overflow-hidden group-hover:scale-110 transition-smooth">
               <img
-                src="/src/assets/fylaro-logo-icon.png"
+                src="../src/assets/fylaro-logo-icon.png"
                 alt="Fylaro Logo"
                 className="w-full h-full object-cover"
               />
