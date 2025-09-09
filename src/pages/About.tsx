@@ -19,19 +19,19 @@ const About = () => {
 
   const teamMembers = [
     {
-      name: "Alex Chen",
+      name: "Nilesh",
       role: "CEO & Co-Founder",
-      bio: "Former Goldman Sachs VP with 15+ years in fintech innovation",
+      bio: "Former Goldman Sachs VP with 5+ years in fintech innovation",
       image: "/placeholder-avatar-1.jpg",
     },
     {
-      name: "Sarah Johnson",
+      name: "Aniket Sahu",
       role: "CTO & Co-Founder",
       bio: "Ex-Microsoft architect specializing in blockchain infrastructure",
       image: "/placeholder-avatar-2.jpg",
     },
     {
-      name: "David Rodriguez",
+      name: "Arun Pratap",
       role: "Head of Product",
       bio: "Former Stripe product manager with expertise in financial platforms",
       image: "/placeholder-avatar-3.jpg",
@@ -39,13 +39,13 @@ const About = () => {
   ];
 
   const milestones = [
-    { year: "2023", event: "Fylaro founded with $5M seed funding" },
+    { year: "2025", event: "Fylaro founded with pre seed funding" },
     {
-      year: "2024",
-      event: "Platform launch and first $10M in invoice financing",
+      year: "2025",
+      event: "Platform launch and first $X in invoice financing",
     },
-    { year: "2024", event: "Finternet integration and global expansion" },
-    { year: "2025", event: "100+ enterprise clients and $500M+ processed" },
+    { year: "2026", event: "Finternet integration and global expansion" },
+    { year: "2026", event: "100+ enterprise clients and $500M+ processed" },
   ];
 
   return (
